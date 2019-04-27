@@ -1,5 +1,5 @@
 print_char:
-    mov     ah, 0x02        ; attrib = green on black
+    mov     ah, 0x02        ; attrib = green on black because HACKERM4N
     mov     cx, ax          ; save char/attribute
     movzx   ax, byte [ypos]
     mov     dx, 160         ; 2 bytes (char/attrib)
