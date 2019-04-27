@@ -1,6 +1,7 @@
 ; Largely copied from the OSDev wiki
-;=====================================
-; nasm boot.asm -f bin -o boot.bin
+;=========================================
+; Assemble with:
+; nasm tos_boot.asm -f bin -o tos_boot.bin
 
     [org    0x7c00]      ; add to offsets
 
