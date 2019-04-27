@@ -22,8 +22,8 @@ dochar:
 
 print_string:
     lodsb                   ; string char to AL
-    cmp     al, 0
-    jne     dochar          ; else, we're done
-    add     byte [ypos], 1  ;down one row
-    mov     byte [xpos], 0  ;back to left
+    cmp     al, 0           ; have we hit the null character yet?
+    jne     dochar          ; if so, we've finished printing the string
+    add     byte [ypos], 1  ; down one row
+    mov     byte [xpos], 0  ; back to left
     ret
